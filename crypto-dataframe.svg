@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Sky Background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a6c;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#b21f1f;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fdbb2d;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#skyGradient)" />
+  
+  <!-- Mountains in the background -->
+  <path d="M0,600 L0,400 L100,350 L200,450 L300,380 L400,430 L500,350 L600,440 L700,380 L800,420 L800,600 Z" fill="#2d3436" />
+  <path d="M0,600 L0,450 L120,400 L240,480 L360,410 L480,460 L600,400 L720,470 L800,440 L800,600 Z" fill="#636e72" />
+  
+  <!-- Snow caps on mountains -->
+  <path d="M100,350 L120,360 L80,365 Z" fill="white" />
+  <path d="M300,380 L320,390 L280,395 Z" fill="white" />
+  <path d="M500,350 L520,360 L480,365 Z" fill="white" />
+  <path d="M700,380 L720,390 L680,395 Z" fill="white" />
+  
+  <!-- DataFrame table background with glass effect -->
+  <defs>
+    <filter id="blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+    <linearGradient id="glassGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.4)" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.1)" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Glow effect behind DataFrame -->
+  <rect x="150" y="100" width="500" height="320" rx="10" ry="10" fill="#00a8ff" opacity="0.3" filter="url(#blur)" />
+  
+  <!-- DataFrame main container -->
+  <rect x="150" y="100" width="500" height="320" rx="10" ry="10" fill="url(#glassGradient)" stroke="#dfe6e9" stroke-width="2" />
+  
+  <!-- DataFrame header -->
+  <rect x="150" y="100" width="500" height="50" rx="10" ry="10" fill="rgba(45,52,54,0.7)" />
+  
+  <!-- Column headers -->
+  <text x="180" y="130" font-family="Arial" font-size="14" fill="white" font-weight="bold">Coin</text>
+  <text x="280" y="130" font-family="Arial" font-size="14" fill="white" font-weight="bold">24h Change%</text>
+  <text x="410" y="130" font-family="Arial" font-size="14" fill="white" font-weight="bold">7d Change%</text>
+  <text x="540" y="130" font-family="Arial" font-size="14" fill="white" font-weight="bold">14d Change%</text>
+  
+  <!-- Row separators -->
+  <line x1="150" y1="150" x2="650" y2="150" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="150" y1="190" x2="650" y2="190" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="150" y1="230" x2="650" y2="230" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="150" y1="270" x2="650" y2="270" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="150" y1="310" x2="650" y2="310" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="150" y1="350" x2="650" y2="350" stroke="#dfe6e9" stroke-width="1" />
+  
+  <!-- Column separators -->
+  <line x1="260" y1="100" x2="260" y2="420" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="390" y1="100" x2="390" y2="420" stroke="#dfe6e9" stroke-width="1" />
+  <line x1="520" y1="100" x2="520" y2="420" stroke="#dfe6e9" stroke-width="1" />
+  
+  <!-- Data rows -->
+  <!-- Bitcoin -->
+  <text x="180" y="175" font-family="Arial" font-size="14" fill="white">Bitcoin</text>
+  <text x="280" y="175" font-family="Arial" font-size="14" fill="#00b894">+2.4%</text>
+  <text x="410" y="175" font-family="Arial" font-size="14" fill="#00b894">+8.7%</text>
+  <text x="540" y="175" font-family="Arial" font-size="14" fill="#00b894">+12.3%</text>
+  
+  <!-- Ethereum -->
+  <text x="180" y="215" font-family="Arial" font-size="14" fill="white">Ethereum</text>
+  <text x="280" y="215" font-family="Arial" font-size="14" fill="#00b894">+1.8%</text>
+  <text x="410" y="215" font-family="Arial" font-size="14" fill="#00b894">+4.2%</text>
+  <text x="540" y="215" font-family="Arial" font-size="14" fill="#00b894">+9.5%</text>
+  
+  <!-- Cardano -->
+  <text x="180" y="255" font-family="Arial" font-size="14" fill="white">Cardano</text>
+  <text x="280" y="255" font-family="Arial" font-size="14" fill="#d63031">-0.7%</text>
+  <text x="410" y="255" font-family="Arial" font-size="14" fill="#d63031">-2.3%</text>
+  <text x="540" y="255" font-family="Arial" font-size="14" fill="#00b894">+4.1%</text>
+  
+  <!-- Solana -->
+  <text x="180" y="295" font-family="Arial" font-size="14" fill="white">Solana</text>
+  <text x="280" y="295" font-family="Arial" font-size="14" fill="#00b894">+4.2%</text>
+  <text x="410" y="295" font-family="Arial" font-size="14" fill="#00b894">+16.5%</text>
+  <text x="540" y="295" font-family="Arial" font-size="14" fill="#00b894">+28.3%</text>
+  
+  <!-- Polkadot -->
+  <text x="180" y="335" font-family="Arial" font-size="14" fill="white">Polkadot</text>
+  <text x="280" y="335" font-family="Arial" font-size="14" fill="#d63031">-1.2%</text>
+  <text x="410" y="335" font-family="Arial" font-size="14" fill="#d63031">-3.8%</text>
+  <text x="540" y="335" font-family="Arial" font-size="14" fill="#d63031">-5.2%</text>
+  
+  <!-- Ripple -->
+  <text x="180" y="375" font-family="Arial" font-size="14" fill="white">Ripple</text>
+  <text x="280" y="375" font-family="Arial" font-size="14" fill="#00b894">+0.9%</text>
+  <text x="410" y="375" font-family="Arial" font-size="14" fill="#d63031">-1.4%</text>
+  <text x="540" y="375" font-family="Arial" font-size="14" fill="#00b894">+3.7%</text>
+  
+  <!-- DataFrame title -->
+  <text x="400" y="80" font-family="Arial" font-size="22" fill="white" text-anchor="middle" font-weight="bold">Cryptocurrency Market Data</text>
+  
+  <!-- Floating effect elements -->
+  <circle cx="170" cy="110" r="3" fill="white" opacity="0.7">
+    <animate attributeName="cy" from="110" to="105" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="630" cy="410" r="2" fill="white" opacity="0.5">
+    <animate attributeName="cy" from="410" to="405" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="400" cy="150" r="2" fill="white" opacity="0.6">
+    <animate attributeName="cy" from="150" to="145" dur="4s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Subtle animation for the DataFrame -->
+  <animateTransform 
+    xlink:href="#dataframe"
+    attributeName="transform"
+    type="translate"
+    from="0 0"
+    to="0 -5"
+    dur="4s"
+    repeatCount="indefinite"
+    additive="sum" />
+</svg>
