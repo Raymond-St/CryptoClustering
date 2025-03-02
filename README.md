@@ -1,6 +1,6 @@
 # Cryptocurrency Clustering Analysis
 
-![CryptoClustering - Challenge # 11](crypto-dataframe.svg)
+![CryptoClustering - Challenge # 11](/crypto-dataframe.svg)
 
 ## Overview
 
